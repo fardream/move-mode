@@ -76,6 +76,7 @@
         (modify-syntax-entry ?\\ "\\" st)
       st))
 
+;;;###autoload
 (define-derived-mode move-mode fundamental-mode "move-lang"
   "Major mode for editing move source code."
   (setq font-lock-defaults '(move-mode-font-lock-keywords))
@@ -86,6 +87,7 @@
 
   )
 
+;;;###autoload
 (add-to-list 'auto-mode-alist '("\\.move\\'" . move-mode))
 
 (provide 'move-mode)
